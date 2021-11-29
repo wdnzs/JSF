@@ -5106,3 +5106,2149 @@ org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://ar
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
 !SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2021-11-29 19:43:07.918
 !MESSAGE No repository found at http://archive.eclipse.org/webtools/downloads/drops/R3.8/R3.8.0/R-3.8.0-20160608130753/repository/.
+!SESSION 2021-11-29 20:47:17.591 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_271
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-11-29 20:47:59.023
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-11-29 20:48:12.163
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wilso'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2021-11-29 20:48:20.319
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: redhat.ctrlflow.com. ; version: 2.0.4.v20170307-1435
+!STACK 0
+java.net.UnknownHostException: redhat.ctrlflow.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2021-11-29 20:48:22.241
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.647
+!MESSAGE For input string: "39680"
+!STACK 0
+java.lang.NumberFormatException: For input string: "39680"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.725
+!MESSAGE For input string: "49692"
+!STACK 0
+java.lang.NumberFormatException: For input string: "49692"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.725
+!MESSAGE For input string: "21117"
+!STACK 0
+java.lang.NumberFormatException: For input string: "21117"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.725
+!MESSAGE For input string: "7779"
+!STACK 0
+java.lang.NumberFormatException: For input string: "7779"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.725
+!MESSAGE For input string: "3092584"
+!STACK 0
+java.lang.NumberFormatException: For input string: "3092584"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.725
+!MESSAGE For input string: "51807"
+!STACK 0
+java.lang.NumberFormatException: For input string: "51807"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "80223"
+!STACK 0
+java.lang.NumberFormatException: For input string: "80223"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "636716"
+!STACK 0
+java.lang.NumberFormatException: For input string: "636716"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "221377"
+!STACK 0
+java.lang.NumberFormatException: For input string: "221377"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "3767"
+!STACK 0
+java.lang.NumberFormatException: For input string: "3767"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "1434616"
+!STACK 0
+java.lang.NumberFormatException: For input string: "1434616"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "13027319"
+!STACK 0
+java.lang.NumberFormatException: For input string: "13027319"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "101699"
+!STACK 0
+java.lang.NumberFormatException: For input string: "101699"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "916994"
+!STACK 0
+java.lang.NumberFormatException: For input string: "916994"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "26290"
+!STACK 0
+java.lang.NumberFormatException: For input string: "26290"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "323238"
+!STACK 0
+java.lang.NumberFormatException: For input string: "323238"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "790920"
+!STACK 0
+java.lang.NumberFormatException: For input string: "790920"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "11024"
+!STACK 0
+java.lang.NumberFormatException: For input string: "11024"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "939801"
+!STACK 0
+java.lang.NumberFormatException: For input string: "939801"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "70956"
+!STACK 0
+java.lang.NumberFormatException: For input string: "70956"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.741
+!MESSAGE For input string: "112330"
+!STACK 0
+java.lang.NumberFormatException: For input string: "112330"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "77406"
+!STACK 0
+java.lang.NumberFormatException: For input string: "77406"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "5948"
+!STACK 0
+java.lang.NumberFormatException: For input string: "5948"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "51836"
+!STACK 0
+java.lang.NumberFormatException: For input string: "51836"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "3804092"
+!STACK 0
+java.lang.NumberFormatException: For input string: "3804092"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "95235"
+!STACK 0
+java.lang.NumberFormatException: For input string: "95235"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "53011"
+!STACK 0
+java.lang.NumberFormatException: For input string: "53011"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "44656"
+!STACK 0
+java.lang.NumberFormatException: For input string: "44656"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "70697"
+!STACK 0
+java.lang.NumberFormatException: For input string: "70697"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "188690"
+!STACK 0
+java.lang.NumberFormatException: For input string: "188690"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "540670"
+!STACK 0
+java.lang.NumberFormatException: For input string: "540670"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "5343220"
+!STACK 0
+java.lang.NumberFormatException: For input string: "5343220"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "6186"
+!STACK 0
+java.lang.NumberFormatException: For input string: "6186"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "189039"
+!STACK 0
+java.lang.NumberFormatException: For input string: "189039"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "1412374"
+!STACK 0
+java.lang.NumberFormatException: For input string: "1412374"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.756
+!MESSAGE For input string: "88029"
+!STACK 0
+java.lang.NumberFormatException: For input string: "88029"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "1716679"
+!STACK 0
+java.lang.NumberFormatException: For input string: "1716679"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "573750"
+!STACK 0
+java.lang.NumberFormatException: For input string: "573750"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "32218"
+!STACK 0
+java.lang.NumberFormatException: For input string: "32218"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "402691"
+!STACK 0
+java.lang.NumberFormatException: For input string: "402691"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "24350"
+!STACK 0
+java.lang.NumberFormatException: For input string: "24350"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "25570"
+!STACK 0
+java.lang.NumberFormatException: For input string: "25570"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "69822"
+!STACK 0
+java.lang.NumberFormatException: For input string: "69822"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "67694"
+!STACK 0
+java.lang.NumberFormatException: For input string: "67694"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "68187"
+!STACK 0
+java.lang.NumberFormatException: For input string: "68187"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "14194"
+!STACK 0
+java.lang.NumberFormatException: For input string: "14194"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "63794"
+!STACK 0
+java.lang.NumberFormatException: For input string: "63794"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "30653"
+!STACK 0
+java.lang.NumberFormatException: For input string: "30653"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "45442"
+!STACK 0
+java.lang.NumberFormatException: For input string: "45442"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "50271"
+!STACK 0
+java.lang.NumberFormatException: For input string: "50271"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "62574"
+!STACK 0
+java.lang.NumberFormatException: For input string: "62574"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "54939"
+!STACK 0
+java.lang.NumberFormatException: For input string: "54939"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "985685"
+!STACK 0
+java.lang.NumberFormatException: For input string: "985685"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "24235"
+!STACK 0
+java.lang.NumberFormatException: For input string: "24235"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.772
+!MESSAGE For input string: "65953"
+!STACK 0
+java.lang.NumberFormatException: For input string: "65953"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "39360"
+!STACK 0
+java.lang.NumberFormatException: For input string: "39360"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "134288"
+!STACK 0
+java.lang.NumberFormatException: For input string: "134288"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "15998"
+!STACK 0
+java.lang.NumberFormatException: For input string: "15998"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "35903"
+!STACK 0
+java.lang.NumberFormatException: For input string: "35903"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "21788"
+!STACK 0
+java.lang.NumberFormatException: For input string: "21788"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "26932"
+!STACK 0
+java.lang.NumberFormatException: For input string: "26932"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "676975"
+!STACK 0
+java.lang.NumberFormatException: For input string: "676975"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "32455"
+!STACK 0
+java.lang.NumberFormatException: For input string: "32455"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "40851"
+!STACK 0
+java.lang.NumberFormatException: For input string: "40851"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "63778"
+!STACK 0
+java.lang.NumberFormatException: For input string: "63778"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "82747"
+!STACK 0
+java.lang.NumberFormatException: For input string: "82747"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "51739"
+!STACK 0
+java.lang.NumberFormatException: For input string: "51739"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "160564"
+!STACK 0
+java.lang.NumberFormatException: For input string: "160564"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "156719"
+!STACK 0
+java.lang.NumberFormatException: For input string: "156719"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "35509"
+!STACK 0
+java.lang.NumberFormatException: For input string: "35509"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "18212"
+!STACK 0
+java.lang.NumberFormatException: For input string: "18212"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "349151"
+!STACK 0
+java.lang.NumberFormatException: For input string: "349151"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2021-11-29 20:48:30.788
+!MESSAGE For input string: "34817"
+!STACK 0
+java.lang.NumberFormatException: For input string: "34817"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.load(BeanArchiveDetector.java:150)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.getBeanArchive(BeanArchiveDetector.java:90)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.detectBeanModule(ClassPathMonitor.java:143)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.ClassPathMonitor.process(ClassPathMonitor.java:106)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:215)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 20:48:35.001
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 20:48:35.282
+!MESSAGE GlassFish: in SunAppServerBehaviour CTOR 
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 20:48:35.282
+!MESSAGE GlassFish: in Behaviour initialize for GlassFish 4 [domain1]
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2021-11-29 20:50:55.038
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.oracle.com/otn_software/oepe/library/oracle-maf-2.2.1-rt.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2021-11-29 20:50:55.038
+!MESSAGE No repository found at http://download.oracle.com/otn_software/oepe/library/oracle-maf-2.2.1-rt.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-11-29 20:52:19.179
+!MESSAGE Connection to http://download.eclipse.org/tools/orbit/downloads/drops/R20150821153341/repository/p2.index failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-11-29 20:52:53.634
+!MESSAGE Connection to http://download.eclipse.org/releases/neon/p2.index failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2021-11-29 20:53:57.471
+!MESSAGE Unable to connect to repository http://download.eclipse.org/releases/neon/compositeContent.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-11-29 20:54:23.549
+!MESSAGE Connection to http://download.eclipse.org/eclipse/updates/4.6/p2.index failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientSecureProtocolSocketFactory.performConnection(ECFHttpClientSecureProtocolSocketFactory.java:96)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientSecureProtocolSocketFactory.connectSocket(ECFHttpClientSecureProtocolSocketFactory.java:77)
+	at org.apache.http.conn.scheme.SchemeLayeredSocketFactoryAdaptor2.connectSocket(SchemeLayeredSocketFactoryAdaptor2.java:60)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-11-29 20:55:34.168
+!MESSAGE No repository found at https://download.jboss.org/jbosstools/updates/stable/neon/.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-11-29 20:55:55.279
+!MESSAGE Connection to http://download.oracle.com/otn_software/oepe/12.2.1.5.1/mars/repository/dependencies/p2.index failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2021-11-29 20:56:27.511
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to connect to repository http://download.oracle.com/otn_software/oepe/library/eclipse-mars.2/compositeContent.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:243)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:73)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:98)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2021-11-29 20:56:27.515
+!MESSAGE Unable to connect to repository http://download.oracle.com/otn_software/oepe/library/eclipse-mars.2/compositeContent.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
