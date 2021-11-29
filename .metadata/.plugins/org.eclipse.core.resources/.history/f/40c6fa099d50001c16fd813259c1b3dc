@@ -1,0 +1,11 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	font: normal 12px Arial;
+}
+table{
+	width: 70%;
+}
+tr > th{
+	background-color: #000; 
+}

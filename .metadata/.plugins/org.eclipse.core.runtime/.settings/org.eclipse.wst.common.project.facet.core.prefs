@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+user.presets/.usr.0/1/id=jpt.jpa
+user.presets/.usr.0/1/version=2.1
+user.presets/.usr.0/2/id=glassfish.web
+user.presets/.usr.0/2/version=4.0
+user.presets/.usr.0/3/id=java
+user.presets/.usr.0/3/version=1.8
+user.presets/.usr.0/4/id=jst.web
+user.presets/.usr.0/4/version=3.1
+user.presets/.usr.0/5/id=jst.cdi
+user.presets/.usr.0/5/version=1.2
+user.presets/.usr.0/6/id=jst.jsf
+user.presets/.usr.0/6/version=2.2
+user.presets/.usr.0/description=Projeto basico JSF, JPA e CDI
+user.presets/.usr.0/label=JSF_JPA_CDI

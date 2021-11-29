@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+C:\AmbienteDesenvolvimento\Estudos\Udemy\JSF\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2087464417.index
+3901545131.index
+3805022863.index
+1170312233.index
+3886757936.index
+158387796.index

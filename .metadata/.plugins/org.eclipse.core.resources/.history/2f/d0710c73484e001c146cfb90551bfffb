@@ -1,0 +1,10 @@
+package beans;
+
+public class MeuPrimeiroBean {
+	
+	private String ola;
+	
+	public String getOla() {
+		return ola;
+	}
+}

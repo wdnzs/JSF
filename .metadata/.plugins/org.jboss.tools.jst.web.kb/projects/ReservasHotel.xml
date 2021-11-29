@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/org.eclipse.persistence.core.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jaxb-extra-osgi.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.persistence.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/org.eclipse.persistence.jpa.jpql.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-bean-validation.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-media-json-processing.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/webservices-extra-jdk-packages.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.faces.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/html_basic.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/jsf_core.tld" project="ReservasHotel"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.taglib.xml" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.tld" project="ReservasHotel"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/webservices.security.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.servlet.jsp.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/org.eclipse.persistence.jpa.modelgen.processor.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/ha-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-container-servlet.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/endorsed/jaxb-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.jms-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.mail.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-guava.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.enterprise.concurrent.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-media-moxy.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/org.eclipse.persistence.moxy.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/org.eclipse.persistence.oracle.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-mvc-connector.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.transaction-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.json.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-cdi1x-transaction.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.servlet.jsp-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-media-sse.jar"/>
+  <path value="/ReservasHotel/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="ReservasHotel"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/cdi-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/org.eclipse.persistence.antlr.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-common.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-media-jaxb.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.ws.rs-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/mq/lib/jaxm-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/org.eclipse.persistence.jpa.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.security.auth.message-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-server.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.servlet.jsp.jstl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/c-1_0-rt.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/c-1_0.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/c.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/fmt-1_0-rt.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/fmt-1_0.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/fmt.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/fn.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/permittedtaglibs.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/scriptfree.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/sql-1_0-rt.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/sql-1_0.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/sql.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/x-1_0-rt.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/x-1_0.tld" project="ReservasHotel"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/x.tld" project="ReservasHotel"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-cdi1x-servlet.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.management.j2ee-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/webservices-osgi.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jaxb-osgi.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.websocket-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-mvc.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.servlet.jsp.jstl-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-container-grizzly2-http.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-media-multipart.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/org.eclipse.persistence.asm.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.security.jacc-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.ejb-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.interceptor-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-entity-filtering.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-media-json-jackson.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.batch-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/endorsed/webservices-api-osgi.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.el.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.resource-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/endorsed/javax.annotation-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/org.eclipse.persistence.dbws.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.xml.registry-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.enterprise.concurrent-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/weld-osgi-bundle.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.servlet-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-container-servlet-core.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-gf-ejb.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/bean-validator.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-cdi1x.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/webservices-connector.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.xml.rpc-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.inject.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-mvc-jsp.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jersey-mvc-jsp.jar/meta-inf/taglib.tld" project="ReservasHotel"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/glassfish-api.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-client.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/jersey-media-json-jettison.jar"/>
+  <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.enterprise.deploy-api.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="61" name="%0" offset="331" path="%1"/>
+   <linked-el length="52" name="%2" offset="743" path="%3"/>
+   <linked-el length="20" name="%2" offset="1089" path="%3"/>
+   <linked-el length="21" name="%2" offset="1185" path="%3"/>
+   <linked-el length="48" name="%2" offset="512" path="%3"/>
+   <linked-el length="49" name="%2" offset="624" path="%3"/>
+   <linked-el length="24" name="%2" offset="1284" path="%3"/>
+   <linked-el length="32" name="%4" offset="841" path="%3"/>
+   <linked-el length="52" name="%4" offset="743" path="%3"/>
+   <linked-el length="43" name="%4" offset="1486" path="%3"/>
+   <linked-el length="43" name="%4" offset="1695" path="%3"/>
+   <linked-el length="48" name="%4" offset="512" path="%3"/>
+   <linked-el length="49" name="%4" offset="624" path="%3"/>
+   <linked-el length="31" name="%4" offset="960" path="%3"/>
+   <linked-el length="32" name="%4" offset="1605" path="%3"/>
+   <linked-el length="61" name="%5" offset="331" path="%1"/>
+   <linked-el length="32" name="%6" offset="841" path="%3"/>
+   <linked-el length="52" name="%6" offset="743" path="%3"/>
+   <linked-el length="43" name="%6" offset="1486" path="%3"/>
+   <linked-el length="20" name="%6" offset="1089" path="%3"/>
+   <linked-el length="21" name="%6" offset="1185" path="%3"/>
+   <linked-el length="43" name="%6" offset="1695" path="%3"/>
+   <linked-el length="7" name="%6" offset="1472" path="%3"/>
+   <linked-el length="48" name="%6" offset="512" path="%3"/>
+   <linked-el length="31" name="%6" offset="960" path="%3"/>
+   <linked-el length="32" name="%6" offset="1605" path="%3"/>
+   <linked-el length="24" name="%6" offset="1284" path="%3"/>
+   <linked-el length="7" name="%6" offset="1681" path="%3"/>
+   <linked-el length="49" name="%6" offset="624" path="%3"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="meuPrimeiroBean" value="%0"/>
+  <alias path="/ReservasHotel/src/modelo/Pessoa.java" value="%2"/>
+  <alias path="/ReservasHotel/WebContent/cadastropessoas.xhtml" value="%3"/>
+  <alias path="/ReservasHotel/src/beans/CadastroPessoasBean.java" value="%4"/>
+  <alias path="/ReservasHotel/WebContent/primeiro.xhtml" value="%1"/>
+  <alias path="/ReservasHotel/src/beans/MeuPrimeiroBean.java" value="%5"/>
+  <alias path="cadastroPessoasBean" value="%6"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+ </uris>
+</kb-project>
