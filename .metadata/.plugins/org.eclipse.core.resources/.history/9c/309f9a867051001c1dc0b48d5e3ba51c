@@ -16,7 +16,7 @@ import javax.persistence.ManyToMany;
 
 /**
  * Entity implementation class for Entity: Diaria
- * Sei la
+ * Teste / novo teste
  */
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
