@@ -7252,3 +7252,321 @@ java.net.ConnectException: Connection timed out: connect
 	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 0 2021-11-29 21:16:40.049
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.custom.StyledText.getCharCount(StyledText.java:3923)
+	at org.eclipse.swt.custom.StyledText$12.getCharacterCount(StyledText.java:6555)
+	at org.eclipse.swt.accessibility.Accessible.getCharacterCount(Accessible.java:5246)
+	at org.eclipse.swt.accessibility.Accessible.get_nCharacters(Accessible.java:4867)
+	at org.eclipse.swt.accessibility.Accessible$10.method17(Accessible.java:658)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback17(COMObject.java:218)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3144)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3819)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:18:28.535
+!MESSAGE GlassFish: in SUN SunAppServerLaunch launch
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:19:12.732
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:19:12.810
+!MESSAGE GlassFish: reading from domain.xml adminServerPortNumber=4848
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:19:12.810
+!MESSAGE GlassFish: in glassfish initialize done readServerConfiguration
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:19:12.888
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:19:12.903
+!MESSAGE GlassFish: reading from domain.xml adminServerPortNumber=4848
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:19:12.903
+!MESSAGE GlassFish: in glassfish initialize done readServerConfiguration
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:19:12.919
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:19:13.091
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:19:13.450
+!MESSAGE GlassFish: Deploy archive C:\AmbienteDesenvolvimento\Estudos\GitHub\JSF\ReservasHotel.war
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:19:14.700
+!MESSAGE GlassFish: done publishModule in 1578 ms
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:21:13.893
+!MESSAGE GlassFish: STOP IS CALLED!!!!!!!!!!!!!!!!
+!SESSION 2021-11-29 21:49:37.216 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_271
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:49:58.488
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-11-29 21:49:58.832
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wilso'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:49:59.019
+!MESSAGE GlassFish: in SunAppServerBehaviour CTOR 
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:49:59.301
+!MESSAGE GlassFish: in Behaviour initialize for GlassFish 4 [domain1]
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2021-11-29 21:50:01.609
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: redhat.ctrlflow.com. ; version: 2.0.4.v20170307-1435
+!STACK 0
+java.net.UnknownHostException: redhat.ctrlflow.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2021-11-29 21:50:03.265
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-11-29 21:51:03.776
+!MESSAGE Connection to http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui/content.xml.xz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientSecureProtocolSocketFactory.performConnection(ECFHttpClientSecureProtocolSocketFactory.java:96)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientSecureProtocolSocketFactory.connectSocket(ECFHttpClientSecureProtocolSocketFactory.java:77)
+	at org.apache.http.conn.scheme.SchemeLayeredSocketFactoryAdaptor2.connectSocket(SchemeLayeredSocketFactoryAdaptor2.java:60)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:32.885
+!MESSAGE GlassFish: in SUN SunAppServerLaunch launch
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:54.538
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:54.601
+!MESSAGE GlassFish: reading from domain.xml adminServerPortNumber=4848
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:54.616
+!MESSAGE GlassFish: in glassfish initialize done readServerConfiguration
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:54.695
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:54.741
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:54.741
+!MESSAGE GlassFish: reading from domain.xml adminServerPortNumber=4848
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:54.741
+!MESSAGE GlassFish: in glassfish initialize done readServerConfiguration
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:54.866
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:55.163
+!MESSAGE GlassFish: Deploy archive C:\AmbienteDesenvolvimento\Estudos\GitHub\JSF\ReservasHotel.war
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:52:56.741
+!MESSAGE GlassFish: done publishModule in 1796 ms
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-11-29 21:53:06.597
+!MESSAGE No repository found at http://download.eclipse.org/releases/neon.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-11-29 21:54:13.667
+!MESSAGE No repository found at https://download.jboss.org/jbosstools/updates/stable/neon/.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-11-29 21:54:51.125
+!MESSAGE Connection to http://download.eclipse.org/webtools/repository/neon/p2.index failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:58:22.414
+!MESSAGE GlassFish: Deploy archive C:\AmbienteDesenvolvimento\Estudos\GitHub\JSF\ReservasHotel.war
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:58:23.578
+!MESSAGE GlassFish: done publishModule in 1289 ms
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:58:39.967
+!MESSAGE GlassFish: in GlassfishServerBehaviourDelegate stop
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:58:54.586
+!MESSAGE GlassFish: in SUN SunAppServerLaunch launch
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:07.936
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:07.952
+!MESSAGE GlassFish: reading from domain.xml adminServerPortNumber=4848
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:07.952
+!MESSAGE GlassFish: in glassfish initialize done readServerConfiguration
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:07.999
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:08.030
+!MESSAGE GlassFish: reading from domain.xml adminServerPortNumber=4848
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:08.030
+!MESSAGE GlassFish: in glassfish initialize done readServerConfiguration
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:08.030
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:08.093
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:08.202
+!MESSAGE GlassFish: Deploy archive C:\AmbienteDesenvolvimento\Estudos\GitHub\JSF\ReservasHotel.war
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:09.639
+!MESSAGE GlassFish: done publishModule in 1531 ms
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:27.766
+!MESSAGE GlassFish: in GlassfishServerBehaviourDelegate stop
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:42.402
+!MESSAGE GlassFish: in SUN SunAppServerLaunch launch
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:52.061
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:52.077
+!MESSAGE GlassFish: reading from domain.xml adminServerPortNumber=4848
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:52.077
+!MESSAGE GlassFish: in glassfish initialize done readServerConfiguration
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:52.124
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:52.139
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:52.139
+!MESSAGE GlassFish: reading from domain.xml adminServerPortNumber=4848
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:52.139
+!MESSAGE GlassFish: in glassfish initialize done readServerConfiguration
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:52.171
+!MESSAGE GlassFish: in GlassFishServer initializeGlassFish 4 [domain1]
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:52.264
+!MESSAGE GlassFish: Deploy archive C:\AmbienteDesenvolvimento\Estudos\GitHub\JSF\ReservasHotel.war
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2021-11-29 21:59:53.999
+!MESSAGE GlassFish: done publishModule in 1828 ms

@@ -176,9 +176,6 @@
   <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.enterprise.deploy-api.jar"/>
  </paths>
  <validation>
-  <core validator-id="jsf-verification"/>
-  <core validator-id="jboss.cdi.core"/>
-  <core validator-id="jboss.jsf.core"/>
   <el>
    <linked-el length="61" name="%0" offset="331" path="%1"/>
    <linked-el length="52" name="%2" offset="743" path="%3"/>

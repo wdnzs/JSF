@@ -3,16 +3,12 @@ package beans;
 
 import java.util.ArrayList;
 import java.util.Collection;
-
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
-
 import modelo.Pessoa;
 import modelo.PessoaFisica;
 
 
 @ManagedBean
-@SessionScoped
 public class CadastroPessoasBean{
 
 	
