@@ -1,11 +1,11 @@
-#Mon Nov 29 19:00:29 BRT 2021
+#Tue Nov 30 11:49:22 BRT 2021
 vl=How many times the 'Finish' button pressed during the day
 l=Wizard class name
 ct=jbt
-d=1638223229592
+d=1638283762763
 c=0
 cmp=usage
 a=finishWizard
 cl=org.eclipse.egit.ui.internal.repository.RepositorySearchWizard
 v=2.2.4
-s=1
+s=0

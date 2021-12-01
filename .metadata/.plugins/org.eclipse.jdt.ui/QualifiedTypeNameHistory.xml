@@ -6,4 +6,5 @@
 <fullyQualifiedTypeName name="modelo.PessoaFisica"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.enterprise.context.SessionScoped"/>
+<fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
 </qualifiedTypeNameHistroy>

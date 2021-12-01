@@ -176,46 +176,75 @@
   <path value="C:/AmbienteDesenvolvimento/Softwares/glassfish4/glassfish/modules/javax.enterprise.deploy-api.jar"/>
  </paths>
  <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core"/>
+  <core validator-id="jboss.jsf.core"/>
   <el>
-   <linked-el length="61" name="%0" offset="331" path="%1"/>
-   <linked-el length="52" name="%2" offset="743" path="%3"/>
-   <linked-el length="20" name="%2" offset="1089" path="%3"/>
-   <linked-el length="21" name="%2" offset="1185" path="%3"/>
-   <linked-el length="48" name="%2" offset="512" path="%3"/>
-   <linked-el length="49" name="%2" offset="624" path="%3"/>
-   <linked-el length="24" name="%2" offset="1284" path="%3"/>
-   <linked-el length="32" name="%4" offset="841" path="%3"/>
-   <linked-el length="52" name="%4" offset="743" path="%3"/>
-   <linked-el length="43" name="%4" offset="1486" path="%3"/>
-   <linked-el length="43" name="%4" offset="1695" path="%3"/>
-   <linked-el length="48" name="%4" offset="512" path="%3"/>
-   <linked-el length="49" name="%4" offset="624" path="%3"/>
-   <linked-el length="31" name="%4" offset="960" path="%3"/>
-   <linked-el length="32" name="%4" offset="1605" path="%3"/>
-   <linked-el length="61" name="%5" offset="331" path="%1"/>
-   <linked-el length="32" name="%6" offset="841" path="%3"/>
-   <linked-el length="52" name="%6" offset="743" path="%3"/>
-   <linked-el length="43" name="%6" offset="1486" path="%3"/>
-   <linked-el length="20" name="%6" offset="1089" path="%3"/>
-   <linked-el length="21" name="%6" offset="1185" path="%3"/>
-   <linked-el length="43" name="%6" offset="1695" path="%3"/>
-   <linked-el length="48" name="%6" offset="512" path="%3"/>
-   <linked-el length="31" name="%6" offset="960" path="%3"/>
-   <linked-el length="7" name="%6" offset="1472" path="%3"/>
-   <linked-el length="32" name="%6" offset="1605" path="%3"/>
-   <linked-el length="24" name="%6" offset="1284" path="%3"/>
-   <linked-el length="7" name="%6" offset="1681" path="%3"/>
-   <linked-el length="49" name="%6" offset="624" path="%3"/>
+   <linked-el length="19" name="%0" offset="2128" path="%1"/>
+   <linked-el length="30" name="%0" offset="2256" path="%1"/>
+   <linked-el length="61" name="%2" offset="331" path="%3"/>
+   <linked-el length="21" name="%4" offset="2362" path="%1"/>
+   <linked-el length="48" name="%4" offset="551" path="%1"/>
+   <linked-el length="24" name="%4" offset="2461" path="%1"/>
+   <linked-el length="49" name="%4" offset="1307" path="%1"/>
+   <linked-el length="58" name="%4" offset="988" path="%1"/>
+   <linked-el length="47" name="%4" offset="672" path="%1"/>
+   <linked-el length="19" name="%4" offset="2128" path="%1"/>
+   <linked-el length="30" name="%4" offset="2256" path="%1"/>
+   <linked-el length="52" name="%4" offset="1590" path="%1"/>
+   <linked-el length="20" name="%4" offset="2035" path="%1"/>
+   <linked-el length="48" name="%5" offset="551" path="%1"/>
+   <linked-el length="32" name="%5" offset="1688" path="%1"/>
+   <linked-el length="43" name="%5" offset="2664" path="%1"/>
+   <linked-el length="49" name="%5" offset="1307" path="%1"/>
+   <linked-el length="43" name="%5" offset="2875" path="%1"/>
+   <linked-el length="58" name="%5" offset="988" path="%1"/>
+   <linked-el length="32" name="%5" offset="2785" path="%1"/>
+   <linked-el length="31" name="%5" offset="1906" path="%1"/>
+   <linked-el length="47" name="%5" offset="672" path="%1"/>
+   <linked-el length="34" name="%5" offset="1765" path="%1"/>
+   <linked-el length="52" name="%5" offset="1590" path="%1"/>
+   <linked-el length="19" name="%6" offset="2128" path="%1"/>
+   <linked-el length="30" name="%7" offset="2256" path="%1"/>
+   <linked-el length="61" name="%8" offset="331" path="%3"/>
+   <linked-el length="48" name="%9" offset="551" path="%1"/>
+   <linked-el length="43" name="%9" offset="2664" path="%1"/>
+   <linked-el length="7" name="%9" offset="2861" path="%1"/>
+   <linked-el length="32" name="%9" offset="2785" path="%1"/>
+   <linked-el length="47" name="%9" offset="672" path="%1"/>
+   <linked-el length="34" name="%9" offset="1765" path="%1"/>
+   <linked-el length="21" name="%9" offset="2362" path="%1"/>
+   <linked-el length="7" name="%9" offset="2650" path="%1"/>
+   <linked-el length="32" name="%9" offset="1688" path="%1"/>
+   <linked-el length="24" name="%9" offset="2461" path="%1"/>
+   <linked-el length="49" name="%9" offset="1307" path="%1"/>
+   <linked-el length="43" name="%9" offset="2875" path="%1"/>
+   <linked-el length="58" name="%9" offset="988" path="%1"/>
+   <linked-el length="31" name="%9" offset="1906" path="%1"/>
+   <linked-el length="19" name="%9" offset="2128" path="%1"/>
+   <linked-el length="30" name="%9" offset="2256" path="%1"/>
+   <linked-el length="52" name="%9" offset="1590" path="%1"/>
+   <linked-el length="20" name="%9" offset="2035" path="%1"/>
+   <linked-el length="47" name="%10" offset="672" path="%1"/>
+   <linked-el length="58" name="%11" offset="988" path="%1"/>
+   <linked-el length="47" name="%11" offset="672" path="%1"/>
+   <linked-el length="58" name="%12" offset="988" path="%1"/>
   </el>
  </validation>
  <aliases>
-  <alias path="meuPrimeiroBean" value="%0"/>
-  <alias path="/ReservasHotel/src/modelo/Pessoa.java" value="%2"/>
-  <alias path="/ReservasHotel/WebContent/cadastropessoas.xhtml" value="%3"/>
-  <alias path="/ReservasHotel/src/beans/CadastroPessoasBean.java" value="%4"/>
-  <alias path="/ReservasHotel/WebContent/primeiro.xhtml" value="%1"/>
-  <alias path="/ReservasHotel/src/beans/MeuPrimeiroBean.java" value="%5"/>
-  <alias path="cadastroPessoasBean" value="%6"/>
+  <alias path="meuPrimeiroBean" value="%2"/>
+  <alias path="/ReservasHotel/src/modelo/Pessoa.java" value="%4"/>
+  <alias path="/ReservasHotel/WebContent/cadastropessoas.xhtml" value="%1"/>
+  <alias path="p" value="%0"/>
+  <alias path="/ReservasHotel/src/beans/CadastroPessoasBean.java" value="%5"/>
+  <alias path="/ReservasHotel/WebContent/primeiro.xhtml" value="%3"/>
+  <alias path="p.cpf" value="%6"/>
+  <alias path="p.dataNascimento" value="%7"/>
+  <alias path="/ReservasHotel/src/beans/MeuPrimeiroBean.java" value="%8"/>
+  <alias path="cadastroPessoasBean" value="%9"/>
+  <alias path="cadastroPessoasBean.pessoaSelecionada.cpf" value="%10"/>
+  <alias path="cadastroPessoasBean.pessoaSelecionada" value="%11"/>
+  <alias path="cadastroPessoasBean.pessoaSelecionada.dataNascimento" value="%12"/>
  </aliases>
  <includes/>
  <uris>
