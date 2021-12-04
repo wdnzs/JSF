@@ -1,23 +1,38 @@
 @CHARSET "ISO-8859-1";
 
-body{
+body {
 	font: normal 12px Arial;
 }
-table{
+
+table {
 	width: 70%;
 }
-tr > th{
+
+tr > th {
 	background-color: #DDD; 
 }
 
-tr.linha1 > td{
+tr.linha1 > td {
 	background-color: #FFF;
 }
 
-tr.linha2 > td{
+tr.linha2 > td {
 	background-color: #EEE;
 }
 
-.erro{
+.erro {
 	color: #F00;
+}
+
+.info {
+	color: #00F;
+}
+
+.warn {
+	color: #F00;
+}
+
+.fatal {
+	color: #F00;
+	font-weight: bold;
 }

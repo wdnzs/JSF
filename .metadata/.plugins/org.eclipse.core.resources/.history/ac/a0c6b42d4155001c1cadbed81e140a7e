@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Cadastro de Pessoas</title>
+	<style>
+		@import url("estilo.css");
+	</style>
+</h:head>
+
+<h:body>
+
+	<h:graphicImage name="jsf.png" library="imagens" />
+	
+	<h1>Cadastro de Pessoas</h1>
+	
+	<h:messages infoClass="info" errorClass="erro" warnClass="warn" fatalClass="fatal"/>
+	
+	<h:form>
+		
+		<h:outputLabel for="tipoPessoa" />
+		<h:selectOneRadio value="#{cadastroPessoasBean.tipoNovaPessoa}">
+			<f:selectItem itemLabel="Pessoa Física" itemValue="PF"/>
+			<f:selectItem itemLabel="Pessoa Jurídica" itemValue="PJ"/>
+		</h:selectOneRadio>
+		<h:message for="tipoPessoa"/>
+		
+		<h:panelGrid columns="3">
+			
+			<h:outputLabel for="nome" value="Nome"/>
+			<h:inputText id="nome" value="#{cadastroPessoasBean.pessoaSelecionada.nome}" />
+			<h:message for="nome"/>
+			
+			<h:outputLabel for="email" value="E-mail"/>
+			<h:inputText id="email" value="#{cadastroPessoasBean.pessoaSelecionada.email}" validatorMessage="E-mail inválido!" >
+	 			<f:validateRegex pattern=".+@.+" />
+	 		</h:inputText>
+	 		<h:message for="email" styleClass="erro"/>
+	 		
+	 		<h:outputLabel for="telefone" value="Telefone"/>
+	 		<h:inputText id="telefone" value="#{cadastroPessoasBean.pessoaSelecionada.telefone}" />
+
+		</h:panelGrid>
+		
+		<h:panelGroup id="painelPF" styleClass="painelPF" layout="block"/>
+			
+			<h:outputLabel for="cpf" value="CPF"/>
+			<h:inputText id="cpf" value="#{cadastroPessoasBean.pessoaSelecionada.cpf}" validatorMessage="CPF Inválido!">
+		 		<f:validateRegex pattern="\d{3}(\.\d{3}){2}-\d{2}" />
+		 	</h:inputText>
+			<h:message for="cpf" styleClass="erro"/>
+			
+			<h:outputLabel for="dataNascimento" value="Data de Nascimento"/>
+			<h:inputText id="dataNascimento" value="#{cadastroPessoasBean.pessoaSelecionada.dataNascimento}" converterMessage="Máscara da data dd/mm/aaaa" >
+				<f:convertDateTime pattern="dd/MM/yyyy"/>
+			</h:inputText>
+			<h:message for="dataNascimento" styleClass="erro"/>
+			
+			<h:outputLabel for="sexo" value="Sexo"/>
+			<h:selectOneRadio id="sexo" value="#{cadastroPessoasBean.pessoaSelecionada.sexo}">
+				<f:selectItems value="#{cadastroPessoasBean.sexos}" var="s" itemLabel="#{s.nome}"/>
+			</h:selectOneRadio>
+			<h:message for="sexo" styleClass="erro"/>
+
+		<h:commandButton action="#{cadastroPessoasBean.salvar}" image="#{resource['imagens:suces.png']}" "/>
+		<h:commandButton action="#{cadastroPessoasBean.cancelar}" image="#{resource['imagens:rem.png']}" imediate="true" style=" />
+		
+		<h2>Lista de Pessoas Cadastradas</h2>
+		
+		<h:dataTable value="#{cadastroPessoasBean.lista}" var="p" rowClasses="linha1, linha2">
+		
+			<h:column>
+				<f:facet name="header">Nome</f:facet>
+				#{p.nome}
+			</h:column>
+			
+			<h:column>
+				<f:facet name="header">E-mail</f:facet>
+				#{p.email}
+			</h:column>
+			
+			<h:column>
+				<f:facet name="header">Telefone</f:facet>
+				#{p.telefone}
+			</h:column>
+			
+			<h:column>
+			
+				<f:facet name="header">Ações</f:facet>
+		
+					<h:commandLink value="Editar ">
+						<f:setPropertyActionListener value="#{p}" target="#{cadastroPessoasBean.pessoaSelecionada}" />
+					</h:commandLink>
+				
+					<h:commandLink value="| Excluir" action="#{cadastroPessoasBean.excluir}">
+						<f:setPropertyActionListener value="#{p}" target="#{cadastroPessoasBean.pessoaSelecionada}" />
+					</h:commandLink>
+				
+			</h:column>
+
+		</h:dataTable>
+	</h:form>
+
+</h:body>
+
+</html>
