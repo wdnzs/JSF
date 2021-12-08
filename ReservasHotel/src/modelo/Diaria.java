@@ -3,20 +3,11 @@ package modelo;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
-
-import javax.persistence.DiscriminatorColumn;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 
 /**
  * Entity implementation class for Entity: Diaria
- * 
+ *
  */
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
@@ -26,13 +17,16 @@ public class Diaria implements Serializable {
 	
 	private int codigo;
 	private Date data;
-	private Collection<PessoaFisica> hospede;
+	private Collection<PessoaFisica> hospedes;
+	private Quarto quarto;
 
 	public Diaria() {
 		super();
 	}   
+
 	@Id
-	@GeneratedValue
+	@GeneratedValue(generator="gendiaria")
+	@SequenceGenerator(name="gendiaria", sequenceName="diaria_codigo_seq")
 	public int getCodigo() {
 		return this.codigo;
 	}
@@ -40,6 +34,7 @@ public class Diaria implements Serializable {
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}   
+	@Temporal(TemporalType.DATE)
 	public Date getData() {
 		return this.data;
 	}
@@ -47,16 +42,26 @@ public class Diaria implements Serializable {
 	public void setData(Date data) {
 		this.data = data;
 	}
-	
+
 	@ManyToMany
 	@JoinTable(name="hospedagem",
 			joinColumns=@JoinColumn(name="cod_diaria"),
 			inverseJoinColumns=@JoinColumn(name="cod_pessoa"))
-	public Collection<PessoaFisica> getHospede() {
-		return hospede;
+	public Collection<PessoaFisica> getHospedes() {
+		return hospedes;
 	}
-	public void setHospede(Collection<PessoaFisica> hospede) {
-		this.hospede = hospede;
+
+	public void setHospedes(Collection<PessoaFisica> hospedes) {
+		this.hospedes = hospedes;
 	}
-	  
+	@ManyToOne
+	@JoinColumn(name="cod_quarto")
+	public Quarto getQuarto() {
+		return quarto;
+	}
+
+	public void setQuarto(Quarto quarto) {
+		this.quarto = quarto;
+	}
+   
 }

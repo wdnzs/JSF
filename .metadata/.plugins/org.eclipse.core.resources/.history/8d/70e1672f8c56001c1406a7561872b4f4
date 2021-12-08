@@ -1,0 +1,47 @@
+package validadores;
+
+import javax.faces.application.FacesMessage;
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.validator.FacesValidator;
+
+
+
+@FacesValidator(value="validadorDeCPF")
+public class ValidadoresDeCPF implments Validator{
+
+	@Override
+	public void validate(FacesContext context, UIComponent component, Object value) throws ValidadorException{
+		String cpf = value.toString().replaceAll("{^0-9}", "");
+		if (cpf.length() == 11){
+			int dv1 = Integer.parseInt(cpf.charAt(9)+ "");
+			int dv2 = Integer.parseInt(cpf.charAt(10)+ "");
+			
+			// VAlidando o dv1
+			int contador =10;
+			int soma = 0;
+			
+			for (int x = 0; x < 9; x++){
+				soma += contador * (Integer.parseInt(cpf.charAt(x)+ ""));
+			}
+			
+			int verificador = soma % 11;
+			if (verificador < 2) verificador = 0;
+			else verificador = 11 - verificador;
+			
+			if (dv1 != verificador){
+				throw new ValidatorException(new FAcesMessage(FacesMessage.SEVERITY_ERROR, "", ""));
+			}
+			
+			// VAlidando o dv2
+			contador = 11;
+			soma = 0;
+			
+			for (int x = 0; x < 10; x++){
+				soma += contador * (Integer.parseInt(cpf.charAt(x)+ ""));
+				contador--;
+			}
+			verificador = soma % 11;
+		}
+	}
+

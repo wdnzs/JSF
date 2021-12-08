@@ -1,0 +1,27 @@
+package beans;
+
+import java.util.Locale;
+
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+public class GeralBean {
+	
+	private Locale locale;
+	private List<Locale> localesDisponiveis;
+	
+	public Locale getLocale() {
+		return locale;
+	}
+	public void setLocale(Locale locale) {
+		this.locale = locale;
+	}
+	public LIst<Locale> getLocalesDisponiveis() {
+		return localesDisponiveis;
+	}
+	public void setLocalesDisponiveis(LIst<Locale> localesDisponiveis) {
+		this.localesDisponiveis = localesDisponiveis;
+	}
+	
+	
+}

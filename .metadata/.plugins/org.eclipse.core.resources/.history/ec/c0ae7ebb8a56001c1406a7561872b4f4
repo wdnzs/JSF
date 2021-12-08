@@ -1,0 +1,14 @@
+package validadores;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.validator.FacesValidator;
+
+@FacesValidator(value="validadorDeCPF")
+public class ValidadoresDeCPF implments Validator{
+
+	@Override
+	public void validate(FacesContext context, UIComponent component, Object value) throws ValidadorException{
+		String cpf = value.toString().replaceAll("{^0-9}", "");
+	}
+}

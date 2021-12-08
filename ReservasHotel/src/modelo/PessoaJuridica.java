@@ -1,10 +1,8 @@
 package modelo;
 
 import java.io.Serializable;
-
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
-
+import java.lang.String;
+import javax.persistence.*;
 import modelo.Pessoa;
 
 /**
@@ -14,13 +12,12 @@ import modelo.Pessoa;
 @Entity
 @DiscriminatorValue("PJ")
 public class PessoaJuridica extends Pessoa implements Serializable {
-
+	private static final long serialVersionUID = 1L;
 	
 	private String razaoSocial;
 	private String cnpj;
 	private String inscricaoEstadual;
 	private String inscricaoMunicipal;
-	private static final long serialVersionUID = 1L;
 
 	public PessoaJuridica() {
 		super();
@@ -55,4 +52,3 @@ public class PessoaJuridica extends Pessoa implements Serializable {
 	}
    
 }
-

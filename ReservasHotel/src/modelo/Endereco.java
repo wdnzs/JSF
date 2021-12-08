@@ -7,7 +7,7 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Endereco implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	private String logradouro;
 	private String numero;
 	private String complemento;
@@ -15,7 +15,6 @@ public class Endereco implements Serializable {
 	private String bairro;
 	private String cidade;
 	private String uf;
-	
 	public String getLogradouro() {
 		return logradouro;
 	}
@@ -58,6 +57,4 @@ public class Endereco implements Serializable {
 	public void setUf(String uf) {
 		this.uf = uf;
 	}
-	
-	
 }

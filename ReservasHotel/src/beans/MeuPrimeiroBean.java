@@ -2,12 +2,11 @@ package beans;
 
 import javax.faces.bean.ManagedBean;
 
-@ManagedBean
+@ManagedBean(name="meuPrimeiroBean")
 public class MeuPrimeiroBean {
-	
-	private String ola = "Ola amigos!";
+	private String ola = "Olá <b>amigos</b>!";
 	private boolean exibir = true;
-	
+
 	public String getOla() {
 		return ola;
 	}
@@ -18,10 +17,6 @@ public class MeuPrimeiroBean {
 
 	public void setExibir(boolean exibir) {
 		this.exibir = exibir;
-	}
-
-	public void setOla(String ola) {
-		this.ola = ola;
 	}
 	
 	

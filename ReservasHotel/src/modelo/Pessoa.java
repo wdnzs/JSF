@@ -16,44 +16,43 @@ import javax.persistence.SequenceGenerator;
 
 /**
  * Entity implementation class for Entity: Pessoa
- * 
+ *
  */
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="tipo")
 public abstract class Pessoa implements Serializable {
 	private static final long serialVersionUID = 1L;
-
+	
 	private int codigo;
 	private String nome;
 	private String telefone;
 	private String email;
 	private Endereco endereco;
-	private Collection<Reserva> reserva;
+	private Collection<Reserva> reservas;
+	private Collection<DiariaAvulsa> diariasAvulsas;
 
 	public Pessoa() {
 		super();
 	}
-
+	
 	@Id
-	@GeneratedValue(generator = "genpessoa")
-	@SequenceGenerator(sequenceName = "pessoa_codigo_seq", name = "genpessoa")
+	@GeneratedValue(generator="genpessoa")
+	@SequenceGenerator(sequenceName="pessoa_codigo_seq", name="genpessoa")
 	public int getCodigo() {
 		return this.codigo;
 	}
 
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
-	}
-
+	}   
 	public String getNome() {
 		return this.nome;
 	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
+	}   
 	public String getTelefone() {
 		return this.telefone;
 	}
@@ -61,8 +60,7 @@ public abstract class Pessoa implements Serializable {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-
-	@Column(nullable = false, unique = true)
+	@Column(nullable=false, unique=true)
 	public String getEmail() {
 		return this.email;
 	}
@@ -70,7 +68,7 @@ public abstract class Pessoa implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
 	@Embedded
 	public Endereco getEndereco() {
 		return endereco;
@@ -79,15 +77,23 @@ public abstract class Pessoa implements Serializable {
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
-	
+
 	@OneToMany(mappedBy="cliente")
-	public Collection<Reserva> getReserva() {
-		return reserva;
+	public Collection<Reserva> getReservas() {
+		return reservas;
 	}
 
-	public void setReserva(Collection<Reserva> reserva) {
-		this.reserva = reserva;
+	public void setReservas(Collection<Reserva> reservas) {
+		this.reservas = reservas;
 	}
-	
+
+	@OneToMany(mappedBy="cliente")
+	public Collection<DiariaAvulsa> getDiariasAvulsas() {
+		return diariasAvulsas;
+	}
+
+	public void setDiariasAvulsas(Collection<DiariaAvulsa> diariasAvulsas) {
+		this.diariasAvulsas = diariasAvulsas;
+	}
+
 }
-

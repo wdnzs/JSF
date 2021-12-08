@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="1" glassfish.adminserverportnumber="4848" glassfish.domainpath="C:\AmbienteDesenvolvimento\Softwares\glassfish4\glassfish\domains\domain1" glassfish.jarDeploy="true" glassfish.serverportnumber="8080" hostname="localhost" id="GlassFish 4 [domain1]" name="GlassFish 4 [domain1]" runtime-id="GlassFish 4" server-type="glassfish.server" server-type-id="glassfish.server" start-timeout="240" stop-timeout="240" timestamp="73">
+  <server auto-publish-setting="1" glassfish.adminserverportnumber="4848" glassfish.domainpath="C:\AmbienteDesenvolvimento\Softwares\glassfish4\glassfish\domains\domain1" glassfish.jarDeploy="true" glassfish.serverportnumber="8080" hostname="localhost" id="GlassFish 4 [domain1]" name="GlassFish 4 [domain1]" runtime-id="GlassFish 4" server-type="glassfish.server" server-type-id="glassfish.server" start-timeout="240" stop-timeout="240" timestamp="78">
     <list key="modules" value0="ReservasHotel::org.eclipse.jst.jee.server:ReservasHotel::jst.web::3.1"/>
   </server>
 </servers>

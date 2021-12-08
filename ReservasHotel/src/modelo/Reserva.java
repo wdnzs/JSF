@@ -3,15 +3,7 @@ package modelo;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-
+import javax.persistence.*;
 import modelo.Pessoa;
 
 /**
@@ -19,7 +11,6 @@ import modelo.Pessoa;
  *
  */
 @Entity
-
 public class Reserva implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -40,6 +31,7 @@ public class Reserva implements Serializable {
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}   
+	@Temporal(TemporalType.TIMESTAMP)
 	public Date getData() {
 		return this.data;
 	}
@@ -53,18 +45,17 @@ public class Reserva implements Serializable {
 
 	public void setValor(double valor) {
 		this.valor = valor;
-	}   
-	
+	}
 	@ManyToOne
 	@JoinColumn(name="cod_pessoa")
 	public Pessoa getCliente() {
 		return this.cliente;
 	}
+
 	public void setCliente(Pessoa cliente) {
 		this.cliente = cliente;
 	}
-	
-	@OneToMany(mappedBy="reserva",
+	@OneToMany(mappedBy="reserva", 
 			fetch=FetchType.EAGER,
 			cascade=CascadeType.ALL)
 	public Collection<DiariaReservada> getDiarias() {
@@ -73,5 +64,5 @@ public class Reserva implements Serializable {
 	public void setDiarias(Collection<DiariaReservada> diarias) {
 		this.diarias = diarias;
 	}
-		  
+   
 }
